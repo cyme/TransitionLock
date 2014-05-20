@@ -124,7 +124,7 @@ Some transition-inducing methods, notably `performSegueWithIdentifier:sender:` a
 
 # Getting Started
 
-To build [TransitionLock](http://github.com/cyme/transitionlock), you will also need [BlockCondition](http://github.com/cyme/blockcondition) and [Swizzle](http://github.com/cyme/sizzle). Clone those 3 repositories, and add the following files to your project:
+To build [TransitionLock](http://github.com/cyme/transitionlock), you will also need [BlockCondition](http://github.com/cyme/blockcondition) and [Swizzle](http://github.com/cyme/swizzle). Clone those 3 repositories, and add the following files to your project:
 
 
 > NSObject+MySwizzle.h  
