@@ -80,7 +80,7 @@ Some transition-inducing methods, notably `performSegueWithIdentifier:sender:` a
 ```
 // this is the implementation of a view controller
 // the action method for our button needs to perform a segue, e.g. to present a new controller
-// In this case we find it acceptable for the button action to be dropped if another transition
+// In this case we find it acceptable for the button event to be dropped if another transition
 // is taking place.
 
 - (IBAction)myButtonAction:(id)sender
@@ -109,7 +109,7 @@ Some transition-inducing methods, notably `performSegueWithIdentifier:sender:` a
 	[UIViewController serializeTransitionWithBlock:^() {
 
 		// check if the presented view controller is still present.
-		// note the test will also turn negative if self has been
+		// note the test will also evaluate to FALSE if self has been
 		// dismissed and deallocated as weakSelf will be nil.
 
 		if (weakSelf.presentedViewController)
