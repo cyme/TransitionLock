@@ -57,7 +57,7 @@ When the app cannot gracefully fail and drop the transition, another approach is
 The penalty paid for using the more potent asynchronous approach is slight increased code complexity. The controller hierarchy is not guaranteed to be unchanged when the block is invoked. For example, the controller we intended to dismiss or use for a presentation may have disappeared.
 
 ### More completion blocks
-Some transition-inducing methods, notably `performSegueWithIdentifier:sender:` are not offering completion blocks. This greatly reduces the usability of the TransitionLock library, as transition completion blocks is where we would naturally call `endTransition` and `transitionComplete` . We've remedied this shortcoming
+Some transition-inducing methods, notably `performSegueWithIdentifier:sender:` are not offering completion blocks. This greatly reduces the usability of the TransitionLock library, as transition completion blocks is where we would naturally call `endTransition` and `transitionComplete` . We've remedied this shortcoming by providing the missing methods.
 
 ```
 @interface UIViewController(TransitionLock)
